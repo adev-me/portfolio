@@ -56,7 +56,7 @@
 			Software engineer in the UK. I build end-to-end systems in
 			<span class="text-[color:var(--color-text)]">Go</span>,
 			<span class="text-[color:var(--color-text)]">C#</span>, and
-			<span class="text-[color:var(--color-text)]">PHP</span> — backend through to the screen.
+			<span class="text-[color:var(--color-text)]">PHP</span>. Backend through to the screen.
 		</p>
 
 		<div class="flex flex-wrap gap-2 pt-2">
@@ -103,8 +103,8 @@
 		<div class="space-y-4 text-[color:var(--color-text-2)] leading-relaxed">
 			<p>
 				I write the kind of software I want to use myself: small, fast, single-purpose. I prefer
-				owning the whole stack — designing the schema, writing the API, shipping the frontend,
-				running it on my own infrastructure — over building one slice of someone else's system.
+				owning the whole stack (designing the schema, writing the API, shipping the frontend,
+				running it on my own infrastructure) over building one slice of someone else's system.
 			</p>
 			<p>
 				Day-to-day I move fluently between Go, C#, and PHP. I like long-running services, terse

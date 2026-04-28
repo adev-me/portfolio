@@ -7,7 +7,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
-	<title>ash — software engineer</title>
+	<title>ash · software engineer</title>
 	<meta
 		name="description"
 		content="Ash. UK software engineer. C#, PHP, Go. End-to-end systems."
