@@ -116,9 +116,6 @@
 
 	<!-- projects -->
 	<section class="space-y-6">
-		<h2 class="text-xs uppercase tracking-widest text-[color:var(--color-text-3)] font-mono">
-			selected projects
-		</h2>
 		<ul class="space-y-4">
 			{#each projects as p (p.name)}
 				<li
