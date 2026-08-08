@@ -18,6 +18,17 @@
 	--radius: 8px;
 }
 
+/*
+ * Global UI scale. Tailwind v4 utilities (text, spacing, width/height, icon
+ * sizes, gaps) are all rem-based, so bumping the root font-size grows every
+ * component uniformly with proper reflow (not a transform). KEEP THIS VALUE
+ * IDENTICAL across all adev apps so sizing stays in sync. 115% = +15%.
+ * Set on html only, never also on body, or it compounds.
+ */
+html {
+	font-size: 115%;
+}
+
 html,
 body {
 	background: var(--color-bg);

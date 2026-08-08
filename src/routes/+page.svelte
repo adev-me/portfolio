@@ -10,17 +10,12 @@
 <main class="max-w-3xl mx-auto px-6 py-16 md:py-24 space-y-20">
 	<!-- hero -->
 	<header class="space-y-6">
-		<div class="flex items-center gap-2 text-sm text-[color:var(--color-text-3)]">
-			<span class="inline-block w-1.5 h-1.5 rounded-full bg-accent animate-pulse"></span>
-			<span class="font-mono">available for work</span>
-		</div>
-
 		<h1 class="text-5xl md:text-6xl font-semibold tracking-tight">
-			ash<span class="text-accent">.</span>
+			Hi, I'm ash<span class="text-accent">.</span>
 		</h1>
 
 		<p class="text-lg md:text-xl text-[color:var(--color-text-2)] leading-relaxed max-w-2xl">
-			Software engineer in the UK. I build end-to-end systems in
+			Software engineer in the UK. I build end to end systems in
 			<span class="text-[color:var(--color-text)]">Go</span>,
 			<span class="text-[color:var(--color-text)]">C#</span>, and
 			<span class="text-[color:var(--color-text)]">PHP</span>. Backend through to the screen.
@@ -38,11 +33,11 @@
 
 		<div class="flex flex-wrap items-center gap-5 pt-4 text-sm">
 			<a
-				href="mailto:contact@adev.me"
+				href="mailto:mail@adev.me"
 				class="inline-flex items-center gap-2 text-[color:var(--color-text-2)] hover:text-accent transition-colors"
 			>
 				<Mail class="w-4 h-4" />
-				contact@adev.me
+				mail@adev.me
 			</a>
 			<a
 				href="https://github.com/adevme"
@@ -101,21 +96,21 @@
 									/>
 								</a>
 							</h3>
+							{#if p.stack.length > 0}
+								<div class="flex flex-wrap justify-end gap-1.5 shrink-0">
+									{#each p.stack as s (s)}
+										<span
+											class="text-[10px] font-mono px-1.5 py-0.5 rounded text-[color:var(--color-text-3)]"
+										>
+											{s}
+										</span>
+									{/each}
+								</div>
+							{/if}
 						</div>
 						<p class="mt-2 text-sm text-[color:var(--color-text-2)] leading-relaxed">
 							{p.blurb}
 						</p>
-						{#if p.stack.length > 0}
-							<div class="mt-3 flex flex-wrap gap-1.5">
-								{#each p.stack as s (s)}
-									<span
-										class="text-[10px] font-mono px-1.5 py-0.5 rounded text-[color:var(--color-text-3)]"
-									>
-										{s}
-									</span>
-								{/each}
-							</div>
-						{/if}
 					</li>
 				{/each}
 			</ul>
@@ -129,7 +124,7 @@
 		</h2>
 		<p class="text-[color:var(--color-text-2)]">
 			Permanent or contract roles, UK or remote.
-			<a href="mailto:contact@adev.me" class="text-accent hover:underline">contact@adev.me</a>.
+			<a href="mailto:mail@adev.me" class="text-accent hover:underline">mail@adev.me</a>.
 		</p>
 		<p class="text-xs text-[color:var(--color-text-3)] font-mono pt-4">
 			© ash · built on adev
